@@ -1,0 +1,57 @@
+.formblock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -96px 0 0 -120px;
+    justify-content: center;
+}
+
+input {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    width: 240px;
+    height: 48px;
+    background: white;
+    color: #1A051D;
+    border-radius: 6px;
+    border: 1px solid #ECEBED;
+    padding-left: 16px;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+}
+
+input.formblock__password {
+    margin-top: 24px;
+}
+
+button {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    width: 256px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    border-radius: 6px;
+    border: 1px solid #ECEBED;
+    background: #6979F8;
+    color: white;
+}
+
+.passwordeye {
+    position: absolute;
+    top: 96px;
+    left: 224px;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: #D0C9D6;
+}

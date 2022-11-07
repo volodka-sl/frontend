@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+<body>
+    <form action="" method="POST">
+        <div class="formblock">
+            <input type="text" placeholder="Login" class="formblock__login">
+            <div class="password">
+                <input type="password" placeholder="Password" class="formblock__password" id="password">
+                <img src="src/Shape.png" alt="" class="passwordeye" id="passwordeye" onclick="showPassword()">
+            </div>
+            <button class="formblock__button" type="submit">ВОЙТИ</button>
+        </div>
+    </form>
+    <script>
+        function showPassword() {
+            password = document.getElementById("password")
+            passwordEye = document.getElementById("passwordeye")
+            if (password.type === 'text') {
+                password.type = 'password'
+                passwordEye.src = 'src/Shape.png'
+                passwordEye.style.top = '96px'
+            } else {
+                password.type = 'text'
+                passwordEye.src = 'src/Combined Shape.png'
+                passwordEye.style.top = '94px'
+            }
+        }
+    </script>
+</body>
+</html>
