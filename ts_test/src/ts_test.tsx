@@ -13,14 +13,14 @@ interface Props {
 
 const Article = (props: Props) => {
     const {
-        title: string,
-        content: string,
-        isImportant: boolean,
-        images: Array,
-        tags: Tags,
+        title,
+        content,
+        isImportant,
+        images,
+        tags,
     } = props
 
-    const renderTag = (tag: Object) => (
+    const renderTag = (tag: Tags) => (
         <a href={ tag.link } key={tag.link}>
             { tag.title }
         </a>
