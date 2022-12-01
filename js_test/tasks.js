@@ -7,6 +7,8 @@ function giveMoney(n) {
             if (n > money) {
                 counter ++
                 n -= money
+                console.log(money)
+                console.log(n, 'aboba')
             }
         }
     }
